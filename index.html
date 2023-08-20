@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *
+    {
+      margin:0;
+      padding: 0;
+    }
+    .cont
+    {
+      height:100vh;
+      width:100vw;
+      background-color:aqua;
+    
+      border:solid 3px black
+    }
+    .box1
+    {
+      background-color: blue;
+      border:solid 2px black;
+      height:70px;
+      width:300px;
+      border-radius: 4px;
+      position: relative;
+      animation-name: leftright;
+      animation-duration: 4s;
+      animation-delay: 1s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+      animation-direction: alternate-reverse;
+      
+    }
+    @keyframes leftright
+    {
+      from
+      {
+        top:0px;
+        left:0px;
+      }
+      to{
+        top:0px;
+        left:1600px;
+      }
+    }
+    .box2{
+      background-color: blue;
+      border:solid 2px black;
+      height:70px;
+      width:300px;
+      border-radius: 4px;
+      position: relative;
+      animation-name: rightleft;
+      animation-duration: 4s;
+      animation-delay: 1s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+      /* animation-direction: alternate; */
+    }
+    @keyframes rightleft
+    {
+      from
+      {
+        top:400px;
+        left:0px;
+      }
+      to{
+        top:400px;
+        left:1200px;
+      }
+    }
+    .box3
+    {
+      background-color: blue;
+      border:solid 2px black;
+      height:70px;
+      width:70px;
+      border-radius: 100px;
+      position: relative;
+      left:800px;
+      top:100px;
+      animation-name: circular;
+      animation-duration: 4s;
+      animation-delay:1s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+      animation-direction: alternate;
+    }
+    @keyframes circular{
+      0%
+      {
+          top:10px;
+          left:1580px;
+      }
+      25%{
+        top:10px;
+        left:0px;
+      }
+      50%
+      {
+        top:250px;
+        left:1530px;
+      }
+        
+      100%
+      {top:250px;
+        left:0px;
+      }
+      }
+    
+  </style>
+</head>
+<body>
+  <div class="cont">
+    <div class="box1">
+
+    </div>
+    <div class="box2">
+
+    </div>
+    <div class="box3">
+
+    </div>
+  </div>
+    
+</body>
+</html>
